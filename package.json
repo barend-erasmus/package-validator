@@ -1,7 +1,7 @@
 {
   "name": "package-validator",
   "version": "0.0.3",
-  "description": "",
+  "description": "Checks if packages are up-to-date.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/barend-erasmus/package-validator.git"
