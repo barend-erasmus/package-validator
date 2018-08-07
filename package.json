@@ -1,0 +1,21 @@
+{
+  "name": "package-validator",
+  "version": "0.0.3",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barend-erasmus/package-validator.git"
+  },
+  "author": "Barend Erasmus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barend-erasmus/package-validator/issues"
+  },
+  "homepage": "https://github.com/barend-erasmus/package-validator#readme",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  },
+  "bin": {
+    "package-validator": "./bin/package-validator"
+  }
+}
