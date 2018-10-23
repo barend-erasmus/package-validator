@@ -17,12 +17,28 @@ function npmOutdated(directory) {
     cwd: directory,
   });
 
+  if (!result) {
+    return null;
+  }
+
+  if (!result.output[1]) {
+    return null;
+  }
+
+  if (!result.output[1].toString()) {
+    return null;
+  }
+
   return JSON.parse(result.output[1].toString());
 }
 
 const result = npmOutdated(path.resolve(process.argv[1], '..', '..', '..', '..'));
 
 let exitCode = 0;
+
+if (!result) {
+  process.exit(exitCode);
+}
 
 for (const packageName of Object.keys(result)) {
   const package = result[packageName];

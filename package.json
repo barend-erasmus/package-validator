@@ -1,6 +1,6 @@
 {
   "name": "package-validator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Checks if packages are up-to-date.",
   "repository": {
     "type": "git",
